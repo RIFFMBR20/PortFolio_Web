@@ -9,13 +9,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <!-- Custom CSS -->
   <style>
-    /* Add your custom styles here */
+    #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000; 
+    }
   </style>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Arifful Fikri Portfolio</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -23,11 +28,20 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="#about">About</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="#experience">Organizational Experience</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skill</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#training">Training and Certificate</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#contact">Contact</a>
@@ -39,43 +53,55 @@
 <!-- About Section -->
 <section id="about" class="py-5">
   <div class="text-center mb-4">
+    <div style="height: 40px;"></div>
     <img src="Assets/mypicture/JWL_2955 1.jpg" alt="Your Name" class="img-fluid rounded-circle" style="width: 200px;">
   </div>
   <h3 class="text-center">Arifful Fikri</h3>
   <!-- Professional Headlines -->
   <h4 class="text-center">Data Enthusiast | Machine Learning</h4>
-  <p class="lead text-center">Passionate about creating innovative web solutions.</p>
+  <p class="lead text-center"></p>
   <div style="height: 40px;"></div>
   <div class="container">
     <h2 class="text-center">About Me</h2>
-    <p class="lead text-center">Write a brief introduction about yourself here.</p>
+    <p class="text-center">I am Fresh Graduate from Computer Engineering at Brawijaya University with GPA 3.85. </p>
   </div>
 </section>
 
-<!-- Experience Section -->
+<!-- Organisation Experience Section -->
 <section id="experience" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center">Experience</h2>
+      <h2 class="text-center">Organizational Experience</h2>
+      <div style="height: 20px;"></div>
       <div class="row">
         <div class="col-md-6">
           <div class="card mb-4">
             <div class="card-body">
-              <h4 class="card-title">Job Title</h4>
-              <h5 class="card-subtitle mb-2 text-muted">Company Name</h5>
+              <h4 class="card-title">Head Of Vision Programming</h4>
+              <h5 class="card-subtitle mb-2 text-muted">Robotiik Brawijaya University</h5>
               <p class="card-text">Description of your responsibilities and achievements in this role.</p>
-              <p class="card-text"><small class="text-muted">Start Date - End Date</small></p>
+              <p class="card-text"><small class="text-muted">Dec 2022 - Dec 2023</small></p>
             </div>
           </div>
         </div>
-        <!-- Add more experience cards if needed -->
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title">Deputy Chairman of Advocacy</h4>
+              <h5 class="card-subtitle mb-2 text-muted">HIMA Computer Engineering</h5>
+              <p class="card-text">Description of your responsibilities and achievements in this role.</p>
+              <p class="card-text"><small class="text-muted">Dec 2021 - Dec 2022</small></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
 <!-- Projects Section -->
-<section id="projects" class="py-5 bg-light">
+<section id="projects" class="py-5">
     <div class="container">
       <h2 class="text-center">Projects</h2>
+      <div style="height: 20px;"></div>
       <div class="row">
         <!-- Project Card 1 -->
         <div class="col-lg-4 col-md-6">
@@ -84,7 +110,7 @@
             <div class="card-body">
               <h5 class="card-title">Project 1</h5>
               <p class="card-text">Brief description of Project 1.</p>
-              <a href="#" class="btn btn-primary">View Details</a>
+              <a href="#" class="btn btn-primary">Link Github</a>
             </div>
           </div>
         </div>
@@ -95,7 +121,7 @@
             <div class="card-body">
               <h5 class="card-title">Project 2</h5>
               <p class="card-text">Brief description of Project 2.</p>
-              <a href="#" class="btn btn-primary">View Details</a>
+              <a href="#" class="btn btn-primary">Link Github</a>
             </div>
           </div>
         </div>
@@ -106,7 +132,7 @@
             <div class="card-body">
               <h5 class="card-title">Project 3</h5>
               <p class="card-text">Brief description of Project 3.</p>
-              <a href="#" class="btn btn-primary">View Details</a>
+              <a href="#" class="btn btn-primary">Link Github</a>
             </div>
           </div>
         </div>
@@ -117,46 +143,63 @@
 
 <!-- Skills Section -->
 <section id="skills" class="py-5">
-  <div class="container">
-    <h2 class="text-center">Skills</h2>
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h4 class="card-title">Skill 1</h4>
-            <p class="card-text">Description of Skill 1</p>
+    <div class="container">
+      <h2 class="text-center">Skills</h2>
+      <div style="height: 20px;"></div>
+      <div class="row">
+        <!-- Skill Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <img src="logo1.png" alt="Skill Logo" class="img-fluid mb-3">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">Description of Skill 1 goes here.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h4 class="card-title">Skill 2</h4>
-            <p class="card-text">Description of Skill 2</p>
+        <!-- Skill Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <img src="logo2.png" alt="Skill Logo" class="img-fluid mb-3">
+              <h5 class="card-title">Data Visualization</h5>
+              <p class="card-text">Description of Skill 2 goes here.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h4 class="card-title">Skill 3</h4>
-            <p class="card-text">Description of Skill 3</p>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="logo2.png" alt="Skill Logo" class="img-fluid mb-3">
+                <h5 class="card-title">SQL</h5>
+                <p class="card-text">Description of Skill 2 goes here.</p>
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="logo2.png" alt="Skill Logo" class="img-fluid mb-3">
+                <h5 class="card-title">Machine Learning</h5>
+                <p class="card-text">Description of Skill 2 goes here.</p>
+              </div>
+            </div>
+          </div>
       </div>
-      <!-- Add more skill cards if needed -->
     </div>
-  </div>
-</section>
+  </section>
+  
 
 <!-- Training Section -->
 <section id="training" class="py-5">
     <div class="container">
-      <h2 class="text-center">Training</h2>
+      <h2 class="text-center">Training and Certificate</h2>
+      <div style="height: 20px;"></div>
       <div class="row">
         <div class="col-lg-6">
           <div class="card mb-4">
             <div class="card-body">
+                <img src="logo2.png" alt="Skill Logo" class="img-fluid mb-3">
               <h4 class="card-title">Course Name</h4>
               <h5 class="card-subtitle mb-2 text-muted">Provider Name</h5>
               <p class="card-text">Brief description of the course content and what you learned.</p>
@@ -164,22 +207,21 @@
             </div>
           </div>
         </div>
-        <!-- Add more training cards if needed -->
       </div>
     </div>
   </section>
   
 
 <!-- Contact Section -->
-<section id="contact" class="py-5">
+<section id="contact" class="py-5 bg-light">
   <div class="container text-center">
     <h2>Contact Me</h2>
     <!-- Icons -->
+    <div style="height: 20px;"></div>
     <div>
       <a href="https://github.com/RIFFMBR20" target="_blank" class="btn btn-outline-dark btn-lg mx-2"><i class="fab fa-github" style="font-size: 40px;"></i></a>
-      <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="btn btn-outline-dark btn-lg mx-2"><i class="fab fa-linkedin" style="font-size: 40px;"></i></a>
-      <a href="https://www.instagram.com/yourusername" target="_blank" class="btn btn-outline-dark btn-lg mx-2"><i class="fab fa-instagram" style="font-size: 40px;"></i></a>
-      <a href="mailto:youremail@example.com" class="btn btn-outline-dark btn-lg mx-2"><i class="fas fa-envelope" style="font-size: 40px;"></i></a>
+      <a href="https://www.linkedin.com/in/ariffulfikri" target="_blank" class="btn btn-outline-dark btn-lg mx-2"><i class="fab fa-linkedin" style="font-size: 40px;"></i></a>
+      <a href="https://www.instagram.com/arif_fulfikri_mbr" target="_blank" class="btn btn-outline-dark btn-lg mx-2"><i class="fab fa-instagram" style="font-size: 40px;"></i></a>
     </div>
   </div>
 </section>
@@ -187,7 +229,7 @@
 <!-- Footer -->
 <footer class="py-4 bg-dark text-white text-center">
   <div class="container">
-    <p>&copy; 2024 Arifful Fikri</p>
+    <p>&copy; 2024 Arifful Fikri | ariffulfikri.af@gmail.com </p>
   </div>
 </footer>
 
