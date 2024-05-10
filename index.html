@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
+  <title>Arifful Fikri - Portfolio</title>
   <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -14,6 +14,10 @@
       top: 0;
       width: 100%;
       z-index: 1000; 
+    }
+    .logo-img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
     }
   </style>
 </head>
@@ -63,7 +67,7 @@
   <div style="height: 40px;"></div>
   <div class="container">
     <h2 class="text-center">About Me</h2>
-    <p class="text-center">I am Fresh Graduate from Computer Engineering at Brawijaya University with GPA 3.85. </p>
+    <p class="text-center">I'm a fresh graduate of the Computer Engineering Studies Program at Brawijaya University with an IPK of 3.85. I'm so motivated to start something new. During my lectures, I actively joined various organizations that developed soft and hard skills, such as leadership, responsibility, and programming. I was so interested in data, so I learned how to process data, visualize it, and analyze it.  </p>
   </div>
 </section>
 
@@ -78,7 +82,7 @@
             <div class="card-body">
               <h4 class="card-title">Head Of Vision Programming</h4>
               <h5 class="card-subtitle mb-2 text-muted">Robotiik Brawijaya University</h5>
-              <p class="card-text">Description of your responsibilities and achievements in this role.</p>
+              <p class="card-text">As Head of Vision Programming, I led our team in the 2023 Indonesian Robot Competition (KRI) at the national level and developed machine learning algorithms in Python. </p>
               <p class="card-text"><small class="text-muted">Dec 2022 - Dec 2023</small></p>
             </div>
           </div>
@@ -88,7 +92,7 @@
             <div class="card-body">
               <h4 class="card-title">Deputy Chairman of Advocacy</h4>
               <h5 class="card-subtitle mb-2 text-muted">HIMA Computer Engineering</h5>
-              <p class="card-text">Description of your responsibilities and achievements in this role.</p>
+              <p class="card-text">As Deputy Chairman of the Advokesma Department, I lead computer technology development projects as well as organize events to enhance students' understanding and skills.</p>
               <p class="card-text"><small class="text-muted">Dec 2021 - Dec 2022</small></p>
             </div>
           </div>
@@ -106,33 +110,35 @@
         <!-- Project Card 1 -->
         <div class="col-lg-4 col-md-6">
           <div class="card mb-4">
-            <img src="project1.jpg" class="card-img-top" alt="Project 1">
+            <img src="/Assets/project/mendaurapp.png" class="card-img-top" alt="Project 1">
             <div class="card-body">
-              <h5 class="card-title">Project 1</h5>
-              <p class="card-text">Brief description of Project 1.</p>
-              <a href="#" class="btn btn-primary">Link Github</a>
+              <h5 class="card-title">Mandaur App</h5>
+              <p class="card-text text-justify">Mendaur is an application that can detect organic and inorganic garbage and provides recycling advice. Mendaur's advanced waste detection system helps clients choose recycling options. Mendaur recycles non-organic waste and locates convenient waste disposal locations. </p>
+              <a href="https://github.com/Bam280/mendaur-app" class="btn btn-primary">Link Github</a>
             </div>
           </div>
         </div>
         <!-- Project Card 2 -->
         <div class="col-lg-4 col-md-6">
           <div class="card mb-4">
-            <img src="project2.jpg" class="card-img-top" alt="Project 2">
+            <div style="height: 5px;"></div>
+            <img src="/Assets/project/powebilogo.png" class="card-img-top" alt="Project 2">
             <div class="card-body">
-              <h5 class="card-title">Project 2</h5>
-              <p class="card-text">Brief description of Project 2.</p>
-              <a href="#" class="btn btn-primary">Link Github</a>
+              <h5 class="card-title">PowerBi Project (Spotify Dataset)</h5>
+              <p class="card-text text-justify">
+                In my PowerBI project using Spotify dataset, I aim to visualize the top songs in Indonesia along with relevant information such as artist details and song attributes. By leveraging data visualization techniques, I'll provide insights into the Indonesian music scene, highlighting popular tracks, their artist, and other contextual information to understand trends and preferences.</p>
+              <a href="https://github.com/RIFFMBR20/PowerBI_Project/blob/main/Spotify-Indonesia/Spotify%20report.pdf" class="btn btn-primary">Link Github</a>
             </div>
           </div>
         </div>
         <!-- Project Card 3 -->
         <div class="col-lg-4 col-md-6">
           <div class="card mb-4">
-            <img src="project3.jpg" class="card-img-top" alt="Project 3">
+            <img src="/Assets/project/WPT.png" class="card-img-top" alt="Project 3">
             <div class="card-body">
-              <h5 class="card-title">Project 3</h5>
-              <p class="card-text">Brief description of Project 3.</p>
-              <a href="#" class="btn btn-primary">Link Github</a>
+              <h5 class="card-title">Analyst Capasitor in Wireless Power Transfer</h5>
+              <p class="card-text text-justify">In my project as an Analyst in Capacitor in Wireless Power Transfer, I'm investigating the efficacy of different capacitor configurations in optimizing power transfer efficiency across wireless systems. By analyzing the capacitor's role in storing and releasing electrical energy, I aim to enhance the performance and reliability of wireless power transfer technologies.</p>
+              <a href="https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/view/13230" class="btn btn-primary">Link Paper</a>
             </div>
           </div>
         </div>
@@ -148,40 +154,42 @@
       <div style="height: 20px;"></div>
       <div class="row">
         <!-- Skill Card 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="card w-100">
             <div class="card-body text-center">
-              <img src="logo1.png" alt="Skill Logo" class="img-fluid mb-3">
+              <img src="/Assets/Skill/Python.png" alt="Skill Logo" class="img-fluid logo-img mb-3">
               <h5 class="card-title">Python</h5>
-              <p class="card-text">Description of Skill 1 goes here.</p>
+              <p class="card-text text-justify">Python is a versatile programming language known for its simplicity and readability, making it a popular choice for various applications. It offers extensive libraries and frameworks for tasks ranging from web development to data analysis and machine learning.</p>
             </div>
           </div>
         </div>
         <!-- Skill Card 2 -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="card w-100">
             <div class="card-body text-center">
-              <img src="logo2.png" alt="Skill Logo" class="img-fluid mb-3">
+              <img src="/Assets/Skill/visualisasi_data.png" alt="Skill Logo" class="img-fluid logo-img mb-3">
+              <div style="height: 120px;"></div>
               <h5 class="card-title">Data Visualization</h5>
-              <p class="card-text">Description of Skill 2 goes here.</p>
+              <p class="card-text text-justify">Visualization is essential for understanding complex datasets, and tools like matplotlib, seaborn, Tableau, and PowerBI enable users to create insightful visual representations of their data. These tools offer a range of customizable charts, graphs, and interactive dashboards to effectively communicate trends, patterns, and insights.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card">
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card w-100">
               <div class="card-body text-center">
-                <img src="logo2.png" alt="Skill Logo" class="img-fluid mb-3">
+                <img src="/Assets/Skill/sql.png" alt="Skill Logo" class="img-fluid logo-img mb-3">
+                <div style="height: 145px;"></div>
                 <h5 class="card-title">SQL</h5>
-                <p class="card-text">Description of Skill 2 goes here.</p>
+                <p class= "card-text text-justify">SQL (Structured Query Language) is a fundamental tool for managing and manipulating relational databases. It allows users to retrieve, insert, update, and delete data, as well as perform complex queries and aggregations. Proficiency in SQL is crucial for data analysis, as it enables efficient data extraction and manipulation from databases.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
+          <div class="col-md-4 mb-4 d-flex">
+            <div class="card w-100">
               <div class="card-body text-center">
-                <img src="logo2.png" alt="Skill Logo" class="img-fluid mb-3">
-                <h5 class="card-title">Machine Learning</h5>
-                <p class="card-text">Description of Skill 2 goes here.</p>
+                <img src="/Assets/Skill/machine_learning.jpg" alt="Skill Logo" class="img-fluid logo-img mb-3">
+                <h5 class="card-title">Machine Learning</h5> 
+                <p class="card-text text-justify">Machine learning involves the development of algorithms and models that enable computers to learn from and make predictions or decisions based on data. Python offers powerful libraries like scikit-learn, TensorFlow, and PyTorch for implementing various machine learning techniques, from classification and regression to clustering.</p>
               </div>
             </div>
           </div>
@@ -199,11 +207,45 @@
         <div class="col-lg-6">
           <div class="card mb-4">
             <div class="card-body">
-                <img src="logo2.png" alt="Skill Logo" class="img-fluid mb-3">
-              <h4 class="card-title">Course Name</h4>
-              <h5 class="card-subtitle mb-2 text-muted">Provider Name</h5>
-              <p class="card-text">Brief description of the course content and what you learned.</p>
+                <img src="/Assets/certificate/tensorflow.png" alt="Skill Logo" class="img-fluid mb-3">
+              <h4 class="card-title">Tensorflow Certificate</h4>
+              <h5 class="card-subtitle mb-2 text-muted">Tensorflow</h5>
+              <p class="card-text text-justify">The Tensorflow certificate covered advanced concepts in machine learning and deep learning, equipping me with skills in building and deploying neural networks for various tasks.</p>
+              <p class="card-text"><small class="text-muted">September 23, 2023 - September 23, 2026</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <div class="card-body">
+                <img src="/Assets/certificate/oracle_academy.png" alt="Skill Logo" class="img-fluid mb-3">
+              <h4 class="card-title">Database Design, Database Programming with SQL</h4>
+              <h5 class="card-subtitle mb-2 text-muted">Oracle Academy</h5>
+              <p class="card-text text-justify">The Oracle Academy certificate program provided comprehensive training in database management systems, SQL programming, and database design principles.</p>
+              <p class="card-text"><small class="text-muted">8 February 2024</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <div class="card-body">
+                <img src="/Assets/certificate/dataanalystitbox.png" alt="Skill Logo" class="img-fluid mb-3">
+              <h4 class="card-title">Data Analyst Intermediate</h4>
+              <h5 class="card-subtitle mb-2 text-muted">Itbox by Course Net (Bootcamp Online)</h5>
+              <p class="card-text text-justify">
+                The course covered essential tools and techniques for data analysis, including Microsoft Excel, T-Test, AB Testing, and SQL queries tailored for data analysts.</p>
               <p class="card-text"><small class="text-muted">Completion Date</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <div class="card-body">
+                <img src="/Assets/certificate/KRI.png" alt="Skill Logo" class="img-fluid mb-3">
+              <h4 class="card-title">Finalis Nasional Kontes Robot Indonesia</h4>
+              <h5 class="card-subtitle mb-2 text-muted">Kemendikbud</h5>
+              <p class="card-text text-justify">The National Finalist in the Indonesian Robot Contest honed my skills in robotics, including designing, programming, and optimizing robot performance.</p>
+              <p class="card-text"><small class="text-muted">Juni 2023</small></p>
             </div>
           </div>
         </div>
